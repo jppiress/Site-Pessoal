@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif ;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --cor-primaria: #4f46e5;
+    --cor-segundaria: #7c3aed;
+
+}
+
+body {
+    background-color: black;
+    color: lightgray;
+}
+
+.navegacao {
+    position: fixed;
+    top: 0;
+    background: rgba(15, 23, 42, 0.8);
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem;
+}
+
+.menu {
+    display: flex ;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+.men_nav {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.cabecalho {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foto_cafe {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+    border-radius: 25%;
+    border: 4px solid #4682B4;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #E0B0FF;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.cabec_lin {
+    font-size: 1.5rem;
+    color: #E0B0FF;
+}
+
+.config_sec {
+    padding: 6rem 2rem;
+}
+
+.sobre_titulo {
+    font-size: 3rem;
+    color: #EED9C4;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre_caixa {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid #4682B4;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+}
+
+.sobre_linha {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.proj_caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.proj_card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid #4682B4;
+    overflow: hidden;
+}
+
+.proj_titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.proj_card:hover{
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    transform: translateY(-10px) scale(1.05);
+}
+
+.proj_img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card_desenhos {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.caixa_desc_test{
+    padding: 1.5rem;
+}
+
+.desc_test {
+    margin-bottom: 5px;
+}
+
+.parag_teste {
+    color: rgba(226, 232, 240, 0.8);
+    line-height: 1.25rem;
+}
+
+
+
+
+.grupo_form {
+    margin-bottom: 1.5rem;
+}
+
+.text_form {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border: 1px solid #4682B4;
+    color: #e2e8f0;
+    outline: none;
+}
+
+.text_form:focus {
+    border-color: var(--cor-segundaria);
+    box-shadow: 0 0 10px rgba(79, 70, 229, 0.3);
+}
+
+.botao_form {
+    color: #e2e8f0;
+    background: linear-gradient(45deg, var(--cor-primaria), var(--cor-segundaria));
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5 ease;
+}
+
+.botao_form {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+}
+
+.rodape {
+    font-size: 0.9rem;
+}
+
+.linha_rodape {
+    text-align: center;
+    font-size: 1.25rem;
+    background: rgba(15, 23, 42, 0.8);
+    width: 100%;
+    z-index: 100;
+    padding: 1rem;
+}
